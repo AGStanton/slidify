@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course Project Presentation</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Course Project Presentation">
+  <meta name="author" content="Albert Stanton">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Course Project Presentation</h1>
+    <h2>Developing an Intuition for the Size of Landmasses</h2>
+    <p>Albert Stanton<br/>Data Science Student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>The Vastness of the Earth</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Have you ever tried to grasp the scale of our planet?</p>
+
+<p>It can be difficult because most day-to-day activities relevant to our lives are on MUCH smaller scales.</p>
+
+<p>Let&#39;s forget about the mind-blowing vastness of the universe for now, and just consider Earth.</p>
+
+<p>Earth actually has a surface area of 196,936,994 square miles, or...</p>
+
+<pre><code class="r">## converting from square miles to square feet
+## 5280 feet in one mile
+print(196936994 * (5280^2)) 
+</code></pre>
+
+<pre><code>## [1] 5.490288e+15
+</code></pre>
+
+<p>5.4902883 x 10<sup>15</sup> square feet. Wow, that&#39;s big. Maybe too big to really understand.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>How to Develop an Intuition</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>But wait, you don&#39;t have to resign yourself to a life of having a poor internal representation of large geographical entities.</p>
+
+<p>In fact, a good starting point for &quot;getting a feel&quot; for large scales would be looking at landmasses.</p>
+
+<p>If only there was a tool that allowed users to: </p>
+
+<ol>
+<li>Select a landmass</li>
+<li>Select a familiar, tangible, widely known unit of measurement.</li>
+<li>Express the size of that landmass in those familiar units.</li>
+</ol>
+
+<p>I may have a solution...</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Introducing a Shiny App for Developing this Intuition</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>With my shiny app, you can </p>
+
+<ol>
+<li>Select any landmass with surface area greater than 10,000 square miles,</li>
+<li>Select one of three familiar units of measurement (human, house, stadium), and</li>
+<li>Have that landmass surface area expressed in those familiar units.</li>
+</ol>
+
+<p>And boom, you have converted a mind-numbing number into something much more illustrative.</p>
+
+<p>But who would want this, you might ask?</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Who is this App for?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This app is for:</p>
+
+<ol>
+<li>Teachers trying to engage their students&#39; imaginations.</li>
+<li>Curious individuals wanting to sharpen their intuition.</li>
+<li>People with an interest in geography.</li>
+</ol>
+
+<p>Though this is a simple app, I hope you have enjoyed this presentation. Thanks for your time and consideration.</p>
+
+<p>You can find the shiny app here:  <a href="https://agstanton.shinyapps.io/dataProducts/">https://agstanton.shinyapps.io/dataProducts/</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='The Vastness of the Earth'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='How to Develop an Intuition'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Introducing a Shiny App for Developing this Intuition'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Who is this App for?'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
